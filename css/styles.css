@@ -71,6 +71,7 @@ footer{
 .fixed{
     background: url(../images/alexander-ramsey-ONilPuP-UHU-unsplash.jpg) center/cover no-repeat fixed;
     height: 400px;
+    background-color: red;
 }
 
 
