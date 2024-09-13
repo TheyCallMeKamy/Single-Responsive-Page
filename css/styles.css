@@ -166,6 +166,51 @@ nav ul li a{
 }
 
 
+.burger {
+    display: none;
+}
+
+
+.burger span{
+    display: none;
+}
+
+.burger span img{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    display: none;
+}
+
+
+.sideNav {
+    display: none;
+}
+
+.sideNav a {
+    display: none;
+}
+
+
+.sideNav a:hover {
+    color: white;
+}
+
+
+.sideNav .closebtn {
+    display: none;
+}
+
+.sideNav img{
+    width: 40px;
+    display: block;
+    position: absolute;
+    top:12.5px ;
+    left: 12.5px;
+}
+
 
 
 
