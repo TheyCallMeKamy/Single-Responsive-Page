@@ -23,7 +23,7 @@ img{
 
 header{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 25vh;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,51 @@ header h1{
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+.burger {
+    display: none;
+}
+
+
+.burger span{
+    display: none;
+}
+
+.burger span img{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    display: none;
+}
+
+
+.sideNav {
+    display: none;
+}
+
+.sideNav a {
+    display: none;
+}
+
+
+.sideNav a:hover {
+    color: white;
+}
+
+
+.sideNav .closebtn {
+    display: none;
+}
+
+.sideNav img{
+    width: 40px;
+    display: block;
+    position: absolute;
+    top:12.5px ;
+    left: 12.5px;
+}
 p{
     font-size: 1em;
     text-align: center;
@@ -164,53 +209,70 @@ nav ul li a{
     border-radius: 5px;
     cursor: pointer;
 }
-
-
-.burger {
-    display: none;
-}
-
-
-.burger span{
-    display: none;
-}
-
-.burger span img{
-    display: none;
-}
-
-button{
-    cursor: pointer;
-    display: none;
-}
-
-
+@media only screen and (max-width: 767px) {
 .sideNav {
-    display: none;
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
 }
 
 .sideNav a {
-    display: none;
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(125, 125, 125);
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
 }
-
-
-.sideNav a:hover {
-    color: white;
-}
-
 
 .sideNav .closebtn {
-    display: none;
-}
-
-.sideNav img{
-    width: 40px;
     display: block;
     position: absolute;
-    top:12.5px ;
-    left: 12.5px;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
 }
 
+.burger {
+    position: absolute;
+    display: flex;
+    height: 75px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+.burger span {
+    display: flex;
+    width: 20%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger span img {
+    display: flex;
+    width: 50px;
+    height: 50px
+}
+
+button {
+    display: flex;
+    background: transparent;
+    border: none;
+    font-size: 0px;
+}
+}
 
 
 

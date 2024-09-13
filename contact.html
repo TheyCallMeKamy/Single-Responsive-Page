@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/hamNav.js"></script>
 </head>
 <body>
     <header>
@@ -13,12 +14,16 @@
         <div class="burger">
             <span onclick="openNav()">
             <button>
-                <img src="images/burger-menu-svgrepo-com.svg" alt="">
+                <img src="images/carNav.png" alt="">
             </button>
             </span>
         </div>
     </header>
-   
+    <div id="pageSideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a> 
+        <a href="contact.html">Contact</a>  
+    </div>
     <nav>
         <ul>
           <li>
