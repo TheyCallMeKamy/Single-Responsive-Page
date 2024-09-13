@@ -210,6 +210,9 @@ nav ul li a{
     cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
+    nav{
+        display: none;
+    }
 .sideNav {
     display: block;
     height: 100%;
@@ -270,7 +273,7 @@ button {
     display: flex;
     background: transparent;
     border: none;
-    font-size: 0px;
+    font-size: 10px;
 }
 }
 
