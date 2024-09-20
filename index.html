@@ -6,36 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/hamNav.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="burger">
-            <span onclick="openNav()">
-            <button>
-                <img src="images/carNav.png" alt="">
-            </button>
-            </span>
-        </div>
-        <h1>0% AI</h1>
-    </header>
-    
-    <div id="pageSideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a> 
-        <a href="contact.html">Contact</a>  
-    </div>
+   
     
     <nav>
-      <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-      </ul>  
+        <div class="logo">
+            <h1>0% AI</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-regular fa-compass" onclick="toggleMenu()"></i>
+        </div>
     </nav>
+    
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"; 
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";  
+            } else {
+                menuList.style.maxHeight = "0px";   
+            }
+        }
+    </script>
+  
+    
+   
 
     <section>
         <div>

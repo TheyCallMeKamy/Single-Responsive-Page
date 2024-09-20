@@ -10,6 +10,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-color: gray;
+   
+    
 }
 
 a{
@@ -39,50 +41,9 @@ header h1{
 }
 
 
-.burger {
-    display: none;
-}
 
 
-.burger span{
-    display: none;
-}
 
-.burger span img{
-    display: none;
-}
-
-button{
-    cursor: pointer;
-    display: none;
-}
-
-
-.sideNav {
-    display: none;
-}
-
-.sideNav a {
-    display: none;
-}
-
-
-.sideNav a:hover {
-    color: white;
-}
-
-
-.sideNav .closebtn {
-    display: none;
-}
-
-.sideNav img{
-    width: 40px;
-    display: block;
-    position: absolute;
-    top:12.5px ;
-    left: 12.5px;
-}
 p{
     font-size: 1em;
     text-align: center;
@@ -110,10 +71,12 @@ section div p{
 
 footer{
     text-align: center;
+    background-color: black;
+    color: #ccc;
     padding: 2em 0;
-    background-color: #4F1787;
-    color: aliceblue;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
     
 }
 
@@ -143,31 +106,7 @@ iframe{
     }
 }
 
-nav{
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
-}
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    justify-content: center;
-}
-
-
-nav ul li{
-    margin-right: 20px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: red;
-    font-size: 20px;
-    display: inline-block;
-    padding: 10px;
-
-}
 
 
 .booking-form {
@@ -180,6 +119,7 @@ nav ul li a{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    justify-content: center;
 }
 
 .booking-form h2{
@@ -210,77 +150,83 @@ nav ul li a{
     cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-    nav{
-        display: none;
-    }
-.sideNav {
-    display: block;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(15, 15, 15);
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.3s;
 }
 
-.sideNav a {
-    padding: 8px 8px 8px 20px;
+
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background-color: rgb(216, 16, 16);
+    position: relative;
+    height: 70px;
+    
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+
+
+nav ul li a{
     text-decoration: none;
-    font-size: 20px;
-    color: rgb(125, 125, 125);
-    display: block;
-    transition: 0.3s;
-    text-transform: uppercase;
+    color: #fff ;
 }
 
-.sideNav .closebtn {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: 36px;
+.menu-icon{
+    display: none;
 }
 
-.burger {
-    position: absolute;
-    display: flex;
-    height: 75px;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5%;
+.menu-icon i{
+ color: #fff;
+ font-size: 30px;
+ 
 }
 
-.burger span {
-    display: flex;
-    width: 20%;
-    height: 75px;
-    justify-content: center;
-    align-items: center;
-}
 
-.burger span img {
-    display: flex;
-    width: 50px;
-    height: 50px
-}
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction:column ;
+        text-align: center;
+        background: red;
+        gap: 0;
+        overflow: hidden;
+        max-height: 0;
+    }
+    nav ul li{
+        padding: 20px;
 
-button {
-    display: flex;
-    background: transparent;
-    border: none;
-    font-size: 10px;
-}
+    }
+    .menu-icon{
+      display: block;  
+    }
+    #menuList{
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 
 
-
-
-
+input:invalid, textarea:invalid{
+    border: red 1px solid;
+}
 
 
