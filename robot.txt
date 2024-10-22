@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /index.html
+Allow: /contact.html
+Disallow: /confirmPage.html
+
+
+
+Sitemap: https://frabjous-bavarois-ff7271.netlify.app/sitemap.xml
