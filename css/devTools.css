@@ -81,3 +81,10 @@ h1{
    width: 100%;
    color: red;
 }
+
+
+
+.product:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
