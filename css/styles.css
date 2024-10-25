@@ -70,17 +70,7 @@ section div p{
     padding: 4%;
 }
 
-footer{
-    text-align: center;
-    background-color: black;
-    color: #ccc;
-    padding: 2em 0;
-    
-  
-    
-    
-    
-}
+
 
 .fixed{
     background: url(../images/alexander-ramsey-ONilPuP-UHU-unsplash.jpg) center/cover no-repeat fixed;
@@ -246,20 +236,30 @@ input:invalid, textarea:invalid{
     border: red 1px solid;
 }
 
-
+footer{
+   flex-direction: column;
+   display: flex;
+   background: gray;
+   height: 450px;
+   border-top: 1px solid whitesmoke;
+   padding: 30px 0;
+    
+  
+    
+    
+    
+}
 .links ul li a  {
     color: #fff;
     text-decoration: none;
 }
 
-.socials a{
-    color: rgb(214, 38, 38);
-    height: 60px;
-    margin: 0 10px;
-    text-decoration: none;
-    width: 50px;
-
-    
+.socials {
+ 
+    font-size: 34px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .fa-brands {
@@ -269,14 +269,70 @@ input:invalid, textarea:invalid{
 
 
 
-.map iframe{
-    height: 250px;
-    width: 250px;
-    padding: 20px;
-    margin: 0 20px;
+.map {
+  width: 33.33%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
+#contact-details ul li a{
+    color: #FFD700;
+    margin: 0 0px;
+    
+}
+
+
+footer .contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+
+
+.copyright{
+    width: 100%;
+    background:black ;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+
+
+footer iframe{
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    background: unset;
+
+}
+
+.contact-details span {
+    margin-left: 5px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-wrapper, .map, .links{
+    width: 33.33%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
