@@ -88,8 +88,8 @@ footer{
     background-color: red;
 }
 .iframe{
-   
-  width: 250px;
+  
+   margin-left: 80px; 
   align-items: center;
   justify-content: center;
  
@@ -100,7 +100,7 @@ footer{
 
 .iframe2{
    
-    width: 250px;
+    margin-left: 80px;
     align-items: center;
     justify-content: center;
    
