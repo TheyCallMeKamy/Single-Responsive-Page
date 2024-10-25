@@ -21,6 +21,7 @@ a{
 
 img{
     width: 100%;
+   
 }
 
 header{
@@ -74,9 +75,10 @@ footer{
     background-color: black;
     color: #ccc;
     padding: 2em 0;
-    position: absolute;
     
-    width: 100vw;
+  
+    
+    
     
 }
 
@@ -85,12 +87,27 @@ footer{
     height: 400px;
     background-color: red;
 }
-iframe{
-    margin-right: 10%;
-  width: 450px;
+.iframe{
+   
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+ 
+  
     
     
 }
+
+.iframe2{
+   
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+   
+    
+      
+      
+  }
 
 @media only screen and (min-width: 767px) {
     body {
@@ -228,5 +245,38 @@ nav ul li a{
 input:invalid, textarea:invalid{
     border: red 1px solid;
 }
+
+
+.links ul li a  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials a{
+    color: rgb(214, 38, 38);
+    height: 60px;
+    margin: 0 10px;
+    text-decoration: none;
+    width: 50px;
+
+    
+}
+
+.fa-brands {
+    color: #FFD700;
+}
+
+
+
+
+.map iframe{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+
+
 
 
